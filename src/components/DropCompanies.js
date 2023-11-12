@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { httpHelper } from "../helpers/httpHelper"
 // Componente DropCompanies que renderiza um menu de empresas
 const DropCompanies = ({ companiesId, handleValue }) => {
-	const [companies, setCompanies] = useState(null)  // Estado para armazenar a lista de empresas
+	const [companies, setCompanies] = useState(null)   // Estado para armazenar a lista de empresas
 	const [company, setCompany] = useState(companiesId)  // Estado para armazenar a empresa selecionada
   // URL do endpoint da API para empresas
 	const url = "http://localhost:5000/companies"
