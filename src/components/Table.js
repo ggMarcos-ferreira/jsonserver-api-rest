@@ -1,12 +1,12 @@
 import React from "react"
 import Form from "./Form"
-
+// Componente de tabela para exibir a lista de usuários
 const Table = ({ users, postUser, updateUser, deleteUser }) => {
-	const showUpdateUser = id => {
+	const showUpdateUser = id => { 	// Função para exibir ou ocultar o formulário de atualização do usuário
 		const form = document.getElementsByClassName(`show-form-${id}`)
 		form[0].classList.toggle("hide-form")
 	}
-
+	// Componente interno Row para renderizar uma linha da tabela para cada usuário
 	const Row = ({ user }) => {
 		return (
 			<>
@@ -26,8 +26,8 @@ const Table = ({ users, postUser, updateUser, deleteUser }) => {
 			</>
 		)
 	}
-
-	return (
+	// Renderiza a tabela com títulos, linhas e botões de ação
+	return ( 
 		<div className='table'>
 			<div className='titles'>
 				<div>Name</div>

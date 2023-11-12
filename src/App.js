@@ -1,8 +1,9 @@
 import { LogoIcon } from "./assets/icons"
 import CrudUser from "./components/CrudUser"
 import "./styles/App.css"
-
+// Componente principal da aplicação
 function App() {
+// Retorna a estrutura principal da aplicação
 	return (
 		<>
 			<header>
